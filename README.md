@@ -2,7 +2,7 @@
 
 This is a React app that displays data in either a grid or a table format, and allows users to paginate through the data, sort it by name or last edited date, and search for specific items by name or description.
 
-The app uses higher-order components (HOCs) to provide pagination, sorting, and searching functionality to the grid and table components.
+The app uses higher-order components (HOCs) to provide pagination, sorting, and searching functionality to the grid and table components. React Router has been implemented to allow for viewing of different component pages in the application.
 
 ## Getting Started
 
