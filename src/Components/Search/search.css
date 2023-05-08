@@ -1,41 +1,91 @@
+/* Search form styles for desktop and tablet */
 .search-form {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    margin-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.search-input {
+  flex: 0.5;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: grey;
+  background-color: #F0EDEA;
+}
+
+.search-button:hover {
+  background-color: darkgrey;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+/* Search form styles for mobile */
+@media only screen and (max-width: 768px) {
+  .search-form {
+    margin-top: 10px;
+    margin-left: 10px;
   }
-  
+
   .search-input {
-    flex: 0.5;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    flex: 0.4; /* Decrease input size */
+    padding: 0.4rem; /* Decrease padding */
+    font-size: 0.8rem; /* Decrease font size */
   }
-  
-  .search-input:focus {
-    outline: none;
-  }
-  
+
   .search-button {
-    margin-left: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    color: grey;
-    background-color: #F0EDEA;
+    margin-left: 0.3rem; /* Decrease margin */
+    padding: 0.4rem 0.8rem; /* Decrease padding */
+    font-size: 0.8rem; /* Decrease font size */
   }
   
-  .search-button:hover {
-    background-color: darkgrey;
+  .search-icon {
+    font-size: 1.2rem; /* Decrease icon size */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-form {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .search-input {
+    flex: 0.3; /* Further decrease input size */
+    padding: 0.3rem; /* Further decrease padding */
+    font-size: 0.7rem; /* Further decrease font size */
+    max-width: 6rem;
+  }
+
+  .search-button {
+    margin-left: 0.2rem; /* Further decrease margin */
+    padding: 0.3rem 0.6rem; /* Further decrease padding */
+    font-size: 0.5rem; /* Further decrease font size */
+    max-width: 4rem;
+    max-height: 1rem;
   }
   
-  .search-button:focus {
-    outline: none;
+  .search-icon {
+    font-size: 0.5rem; /* Further decrease icon size */
   }
-  
+}

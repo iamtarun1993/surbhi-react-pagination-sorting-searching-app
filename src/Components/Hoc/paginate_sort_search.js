@@ -7,7 +7,7 @@ import mock_data from '../../Data/mock_data.json';
 const withPaginationAndSortAndSearch = (WrappedComponent) => {
   const WithPaginationAndSortAndSearch = () => {
     const [currentPage, setCurrentPage] = useState(sessionStorage.getItem('currentPage') || 1);
-    const [itemsPerPage, setItemsPerPage] = useState(sessionStorage.getItem('itemsPerPage') || 6);
+    const [itemsPerPage, setItemsPerPage] = useState(sessionStorage.getItem('itemsPerPage') || 9);
     const [sortBy, setSortBy] = useState(JSON.parse(sessionStorage.getItem('sortBy')) || { field: 'name', order: 'asc' });
     const [query, setQuery] = useState(sessionStorage.getItem('query') || '');
 
