@@ -29,10 +29,10 @@ const App = () => {
           <nav className="navbar">
             <ul>
               <li>
-                <Link to="/">Grid</Link>
+                <Link to="/">Grid View</Link>
               </li>
               <li>
-                <Link to="/table">Table</Link>
+                <Link to="/table">Table View</Link>
               </li>
             </ul>
           </nav>
