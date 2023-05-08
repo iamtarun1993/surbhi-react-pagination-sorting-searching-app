@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# React Pagination, Sorting and Searching App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app that displays data in either a grid or a table format, and allows users to paginate through the data, sort it by name or last edited date, and search for specific items by name or description.
 
-## Available Scripts
+The app uses higher-order components (HOCs) to provide pagination, sorting, and searching functionality to the grid and table components.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To run this app on your local machine, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your machine by running `git clone https://github.com/username/react-pagination-sorting-searching-app.git` in your terminal, replacing `username` with your own GitHub username.
+2. Navigate to the root folder of the project (`cd react-pagination-sorting-searching-app`).
+3. Install the dependencies by running `npm install`.
+4. Start the app by running `npm start`.
+5. Open your web browser and go to `http://localhost:3000` to view the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Once the app is running, you can use it to display data in a grid or table format. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Grid View
 
-### `npm run build`
+To display the data in a grid view, click on the "Grid View" button at the navigation bar of the page. The data will be displayed in a grid, with each item represented by a card that includes its name, image, description, and last edited date.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To navigate through the pages of data, use the pagination buttons at the bottom of the page. You can also sort the data by name or last edited date by clicking on the corresponding buttons at the top of the page. To search for specific items by name, enter a search term in the search bar at the top of the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Table View
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To display the data in a table view, click on the "Table View" button at the navigation bar of the page. The data will be displayed in a table, with each item represented by a row that includes its name, description, and last edited date.
 
-### `npm run eject`
+You can use the pagination buttons at the bottom of the page to navigate through the pages of data, and you can sort the data by name or last edited date by clicking on the corresponding buttons at the top of the page. To search for specific items by name, enter a search term in the search bar at the top of the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Seed Data
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app uses the `src/Data/mock_data.json` file as seed data for displaying items in the grid and table views.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [React](https://reactjs.org/) - The JavaScript library used for building the user interface.
+* [React Icons](https://react-icons.github.io/react-icons/) - The library used for adding icons to the app.
